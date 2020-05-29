@@ -1,4 +1,8 @@
+/* Fonts */
+
 @import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+/* Variables */
 
 :root {
   --modal-duration: 1s;
@@ -6,9 +10,13 @@
   --secondary-color: #be2edd;
 }
 
+/* Reset */
+
 * {
   box-sizing: border-box;
 }
+
+/* Global Styles */
 
 body {
   font-family: 'Lato', sans-serif;
@@ -16,9 +24,15 @@ body {
   transition: transform 0.3s ease;
 }
 
+/* Application Styles */
+
+/* Body */
+
 body.show-nav {
   transform: translateX(200px);
 }
+
+/* Navigation Bar */
 
 nav {
   background-color: var(--primary-color);
@@ -30,7 +44,7 @@ nav {
   width: 200px;
   height: 100vh;
   z-index: 100;
-  transform: translateX(-100%);
+  transform: translateX(-100%);   /* ??? */
 }
 
 nav .logo {
@@ -67,6 +81,8 @@ nav ul li a {
 nav ul li a:hover {
   text-decoration: underline;
 }
+
+/* Header */
 
 header {
   background-color: var(--primary-color);
@@ -111,6 +127,8 @@ button:focus {
   font-size: 20px;
 }
 
+/* Containers */
+
 .container {
   padding: 15px;
   margin: 0 auto;
@@ -140,7 +158,7 @@ button:focus {
   overflow: hidden;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);  /* Place in the middle */
   max-width: 100%;
   width: 400px;
   animation-name: modalopen;
